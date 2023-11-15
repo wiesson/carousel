@@ -42,9 +42,9 @@ export function onChangeSlide(container, currentIndex, targetIndex, jumpTo) {
   const nextPos =
     direction === 1
       ? Math.floor(scrollLeft / itemWidth) * itemWidth +
-      itemWidth * itemsToScroll
+        itemWidth * itemsToScroll
       : Math.ceil(scrollLeft / itemWidth) * itemWidth -
-      itemWidth * itemsToScroll;
+        itemWidth * itemsToScroll;
 
   container.scrollTo({
     left: nextPos,
